@@ -1,4 +1,4 @@
-# Challenge Day 1
+# Challenge Day 2
 
 ## Instructions
 
