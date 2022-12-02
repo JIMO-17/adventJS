@@ -1,4 +1,6 @@
-# Instructions
+# Challenge Day 1
+
+## Instructions
 
 This year the elves have bought a gift wrapping machine. But... it's not programmed! We need to create an algorithm that helps it in the task.
 
