@@ -1,4 +1,4 @@
-# My Solutions for AdventJS
+# My Solutions to AdventJS
 
 This is my solutions for the [AdventJS](https://adventjs.dev/) challenges.
 
