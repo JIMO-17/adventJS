@@ -4,11 +4,9 @@ const reindeers = ["dasher", "dancer"]
 distributeGifts(packOfGifts, reindeers)
 
 function distributeGifts(packOfGifts, reindeers) {
-    const weigths = packOfGifts.map((pack) => pack.length);
-  
-    const totalWeigth = weigths.reduce((acc, ac) => acc += ac, 0);
+    const weigths = packOfGifts.map((pack) => pack.length).reduce((acc, ac) => acc += ac, 0);
   
     const carryReindeers = reindeers.reduce((acc, ac) => acc + (ac.length * 2), 0);
-  
-    return parseInt(carryReindeers / totalWeigth)
+    
+    return parseInt(carryReindeers / weigths)
 }
