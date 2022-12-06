@@ -12,6 +12,8 @@ const maxCities = 3
 
 getMaxGifts(giftsCities, maxGifts, maxCities) // 20 (12 + 3 + 5)
 
+// solution 1
+
 function getMaxGifts(giftsCities, maxGifts, maxCities) {
     const getCombinations = (arr, size) => {
         const combinations = [];
@@ -47,3 +49,30 @@ function getMaxGifts(giftsCities, maxGifts, maxCities) {
     return maxSum
 };
 
+// Solution 2 - get this by discord 
+function getMaxGifts2(giftsCities, maxGifts, maxCities) {
+    let combinations = [];
+  
+    combinations.push([], [giftsCities[0]])
+    giftsCities.splice(0,1)
+  
+    giftsCities.map(x => {
+      const _sub = combinations.map(subset => {
+        let s =[...subset]
+        if(s.length < maxCities) {
+          s.push(x)
+        }
+        return s
+      })
+      combinations = [...combinations, ..._sub]
+    })
+  
+    combinations.splice(0,1)
+  
+    return Math.max(
+      ...combinations.map((x) => {
+        let res = x.reduce((total, num) => total + num)
+        return res > maxGifts ? 0 : res
+      })
+    )
+  }
