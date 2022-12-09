@@ -9,3 +9,4 @@ This is my solutions for the [AdventJS](https://adventjs.dev/) challenges.
 - [Day 3](./2022/day3/day3.md)
 - [Day 4](./2022/day4/day4.md)
 - [Day 5](./2022/day5/day5.md)
+- [Day 6](./2022/day6/day6.md)
