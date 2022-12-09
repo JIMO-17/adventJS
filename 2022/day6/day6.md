@@ -49,7 +49,6 @@ Take into account:
 - Make sure you use the correct symbols.
 - Each line must be separated by a new line character \n except for the last one.
 
-
 ## Solution
 
 - [Solution](./day6.js)
