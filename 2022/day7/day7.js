@@ -11,6 +11,7 @@ The gift "doll" and "pc" are only in the stores a2 and a3 respectively.
 
 const gifts = getGiftsToRefill(a1, a2, a3); // ['doll', 'pc']
 
+// Solution one
 function getGiftsToRefill(a1, a2, a3) {
   const missingGifts = [];
   const stores = [a1, a2, a3];
@@ -27,5 +28,17 @@ function getGiftsToRefill(a1, a2, a3) {
     }
   }
 
-  return [...new Set(missingGifts)]
+  return [...new Set(missingGifts)];
+}
+
+// Solution two
+function getGiftsToRefill2(a1, a2, a3) {
+  const uniqueGifts = [...new Set([...a1, ...a2, ...a3])];
+
+  const missingGifts = uniqueGifts.filter((gift) => {
+    const check = a1.includes(gift) + a2.includes(gift) + a3.includes(gift);
+    return check === 1;
+  });
+
+  return missingGifts;
 }
