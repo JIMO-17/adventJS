@@ -1,4 +1,4 @@
-# Challenge Day 7
+# Challenge Day 7: Creating xmas decorations
 
 ## Instructions
 

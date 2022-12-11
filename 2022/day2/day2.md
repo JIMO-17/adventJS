@@ -1,4 +1,4 @@
-# Challenge Day 2
+# Challenge Day 2: Nobody wants to do extra hours at work
 
 ## Instructions
 

@@ -1,4 +1,4 @@
-# Challenge Day 5
+# Challenge Day 5: Optimizing Santa's trips
 
 ## Instructions
 

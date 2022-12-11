@@ -1,4 +1,4 @@
-# Challenge Day 3
+# Challenge Day 3: How many packs of gifts can Santa carry?
 
 ## Instructions
 

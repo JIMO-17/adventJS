@@ -1,4 +1,4 @@
-# Challenge Day 6
+# Challenge Day 6: Creating xmas decorations
 
 ## Instructions
 
